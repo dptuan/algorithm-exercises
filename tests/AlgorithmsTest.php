@@ -1,7 +1,7 @@
 <?php
 
 use TuanDo\SkeletonPhp\DataStoreAndLoad;
-use TuanDo\SkeletonPhp\Graph;
+use TuanDo\SkeletonPhp\OptimalPath;
 
 test('store_data', function () {
     $arr = [
@@ -52,7 +52,7 @@ test('find_optinal_path_in_normal_case', function () {
         'A' => ['B', 'C'],
         'B' => ['C'],
     ];
-    $graph = new Graph('A');
+    $graph = new OptimalPath('A');
     $values = $graph->findOptimalPath($verticles, $edges, 'A', '', 0);
     $bestPath = $values[0];
     $bestWeight = $values[1];
@@ -72,7 +72,7 @@ test('find_optinal_path_in_infinite_loop_case', function () {
         'B' => ['C'],
         'C' => ['A'],
     ];
-    $graph = new Graph('A');
+    $graph = new OptimalPath('A');
     $values = $graph->findOptimalPath($verticles, $edges, 'A', '', 0);
     $bestPath = $values[0];
     $bestWeight = $values[1];

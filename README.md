@@ -18,5 +18,5 @@ Class Name | Test Name      |
 ---------- | -------------- |
 DataStoreAndLoad      | store_data      |
 DataStoreAndLoad      | load_data      |
-Graph      | find_optinal_path_in_normal_case      |
-Graph      | find_optinal_path_in_infinite_loop_case      |
+OptimalPath      | find_optinal_path_in_normal_case      |
+OptimalPath      | find_optinal_path_in_infinite_loop_case      |
